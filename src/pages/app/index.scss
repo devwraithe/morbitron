@@ -1,0 +1,36 @@
+// import globals
+@import "../../assets/styles/global.scss";
+
+// app component
+.app {
+  background-color: $dark;
+  color: $light;
+  overflow-x: hidden;
+
+  .main {
+    .top,
+    .popular,
+    .random {
+      @apply mb-16;
+
+      &__title {
+        font-weight: 900;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        -webkit-text-stroke: 0.3px $light;
+        @apply px-20;
+      }
+
+      &__cards {
+        grid-gap: 1em;
+        overflow-x: scroll;
+        @apply px-20;
+      }
+    }
+  }
+
+  // hide all scrollbars
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}

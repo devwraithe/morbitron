@@ -1,0 +1,64 @@
+// import global
+@import "../../assets/styles/global.scss";
+
+// header component
+.header {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: $dark;
+  color: $light;
+  height: 100vh;
+
+  &__wrapper {
+    background: linear-gradient(to right, $dark, rgba($dark, 0.25));
+    height: 100%;
+  }
+
+  .nav {
+    padding-top: 2em;
+    font-size: 15px;
+
+    &__anchor {
+      margin-left: 2em;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    width: 55%;
+    @apply p-16 px-20;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 120%;
+    text-transform: capitalize;
+  }
+
+  &__summary {
+    line-height: 175%;
+  }
+
+  &__info {
+    @include smallTags;
+  }
+
+  &__btn {
+    background-color: $light;
+    color: $dark;
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    @apply px-6 font-extrabold;
+  }
+}
+
+.secondary {
+  background-color: rgba($light, 0.2);
+  color: $light;
+  @apply font-medium;
+}

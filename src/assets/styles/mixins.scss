@@ -1,0 +1,15 @@
+// tags
+@mixin tags {
+  color: $gray;
+  font-size: 15px;
+}
+
+@mixin smallTags {
+  color: $gray;
+  font-size: 14px;
+}
+
+@mixin xsTags {
+  color: $gray;
+  font-size: 12px;
+}

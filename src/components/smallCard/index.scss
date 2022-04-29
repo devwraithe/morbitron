@@ -1,0 +1,33 @@
+// import globals
+@import "../../assets/styles/global.scss";
+
+$w: 20em;
+
+// largeCard component
+.smallCard {
+  width: $w;
+
+  &__wrapper {
+    width: $w;
+  }
+
+  &__image {
+    width: 100%;
+    background-color: gray;
+    height: 13em;
+  }
+
+  &__imgSrc {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__tags {
+    @include xsTags;
+    text-transform: uppercase;
+  }
+}

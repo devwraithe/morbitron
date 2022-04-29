@@ -1,0 +1,9 @@
+// import global
+@import "../../assets/styles/global.scss";
+
+// bottom nav component
+.bottomNav {
+  &__wrapper {
+    background-color: rgba($color: $dark, $alpha: 0.8);
+  }
+}
