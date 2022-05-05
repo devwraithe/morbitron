@@ -1,23 +1,20 @@
 // import components
-import { Routes, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
-import App from "./pages/app";
-import Series from "./pages/series";
-import ViewMovie from "./pages/viewMovie";
-import ViewTv from "./pages/viewTv";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/app";
+import Film from "./pages/film";
+import Movies from "./pages/films/movies";
 
 // routes component
 const SiteRoutes = () => {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route path="/" exact element={<App />} />
-          <Route path="/series/" exact element={<Series />} />
-          <Route path="/movie/:id" element={<ViewMovie />} />
-          <Route path="/series/tv/:id" exact element={<ViewTv />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/film/:id" element={<Film />} />
+          <Route path="/movies" element={<Movies />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };

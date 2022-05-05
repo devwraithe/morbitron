@@ -1,0 +1,28 @@
+// import global
+@import "../../assets/styles/global.scss";
+
+// section component
+.section {
+  &__title {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    @include media-min(md-min) {
+      @apply px-20;
+    }
+    @include media-max(sm-max) {
+      @apply px-5;
+    }
+  }
+
+  &__cards {
+    grid-gap: 1em;
+    overflow-x: scroll;
+    @apply mt-7 flex;
+    @include media-min(md-min) {
+      @apply px-20;
+    }
+    @include media-max(sm-max) {
+      @apply px-5;
+    }
+  }
+}

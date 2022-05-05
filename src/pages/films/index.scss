@@ -1,8 +1,10 @@
 // import globals
 @import "../../assets/styles/global.scss";
 
-// home component
-.home {
+// components
+.movies,
+.series,
+.trending {
   color: white;
 
   // hide all scrollbars

@@ -1,16 +1,14 @@
 // import globals
 @import "../../assets/styles/global.scss";
 
-// viewMovie component
-.viewMovie {
-  .footer {
-    @apply bg-zinc-900;
-    padding-top: 2em;
-    padding-bottom: 1.6em;
-    font-size: 15px;
-
-    &__anchor {
-      margin-left: 2em;
-    }
+// footer component
+.footer {
+  background-color: #101010;
+  @include media-min(md-min) {
+    @apply px-20 py-10 pb-8;
   }
+  @include media-max(sm-max) {
+    @apply px-5 py-10 pb-8;
+  }
+  font-size: 15px;
 }

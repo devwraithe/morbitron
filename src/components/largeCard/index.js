@@ -18,11 +18,6 @@ const LargeCard = ({ movie }) => {
               {movie.vote_count} VOTES
             </div>
             <div className="largeCard__title">{movie.title}</div>
-            {/* <div className="largeCard__tags mt-4">
-              PG 13<span className="mx-2">&bull;</span>
-              Comedy<span className="mx-2">&bull;</span>
-              2019 
-            </div> */}
           </div>
         </div>
       </div>

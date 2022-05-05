@@ -9,42 +9,48 @@
   background-size: cover;
   background-color: $dark;
   color: $light;
-  height: 100vh;
 
   &__wrapper {
-    background: linear-gradient(to right, $dark, rgba($dark, 0.25));
+    background: linear-gradient(to right, rgba($dark, 0.85), rgba($dark, 0));
     height: 100%;
   }
 
-  .nav {
-    padding-top: 2em;
-    font-size: 15px;
-
-    &__anchor {
-      margin-left: 2em;
+  &__main {
+    @include media-min(lg-min) {
+      @apply p-16 px-24 pt-60 pb-10;
+    }
+    @include media-btw(md-min, md-max) {
+      @apply p-16 px-14 pt-56 pb-10;
+    }
+    @include media-max(sm-max) {
+      @apply p-16 px-5 pt-52 pb-10;
     }
   }
 
-  &__content {
-    position: absolute;
-    bottom: 0;
-    width: 55%;
-    @apply p-16 px-20;
-  }
-
   &__title {
-    font-weight: 900;
-    font-size: 45px;
+    font-weight: 500;
     line-height: 120%;
     text-transform: capitalize;
+    @include media-min(lg-min) {
+      font-size: 50px;
+    }
+    @include media-btw(md-min, md-max) {
+      font-size: 45px;
+    }
+    @include media-max(sm-max) {
+      font-size: 35px;
+    }
   }
 
-  &__summary {
-    line-height: 175%;
-  }
-
-  &__info {
+  &__tags {
     @include smallTags;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    @include media-max(sm-max) {
+      display: none;
+    }
   }
 
   &__btn {
@@ -53,7 +59,19 @@
     font-size: 14px;
     padding-top: 14px;
     padding-bottom: 14px;
-    @apply px-6 font-extrabold;
+    @apply px-6 font-bold;
+  }
+
+  &__caption {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 175%;
+  }
+
+  &__overview {
+    line-height: 170%;
   }
 }
 

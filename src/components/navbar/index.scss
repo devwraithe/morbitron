@@ -2,3 +2,11 @@
 @import "../../assets/styles/global.scss";
 
 // navbar component
+.nav {
+  @include media-min(md-min) {
+    @apply px-20 py-7 z-50;
+  }
+  @include media-max(sm-max) {
+    @apply px-5 py-7 z-50;
+  }
+}
