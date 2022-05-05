@@ -15,7 +15,7 @@ const SmallCard = ({ movie }) => {
           </div>
           <div className="smallCard__content">
             <div className="smallCard__title mt-4">{movie.title}</div>
-            <div className="smallCard__tags mt-1">
+            <div className="smallCard__tags">
               {movie.original_language}
               <span className="mx-2">&bull;</span>
               {movie.vote_count} VOTES

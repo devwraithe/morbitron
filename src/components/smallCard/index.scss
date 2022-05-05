@@ -22,6 +22,12 @@ $w: 20em;
     object-fit: cover;
   }
 
+  &__video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
   &__title {
     font-size: 18px;
   }

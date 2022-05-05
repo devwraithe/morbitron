@@ -1,0 +1,69 @@
+// import globals
+@import "../../assets/styles/global.scss";
+
+// film component
+.film {
+  background-color: $dark;
+  color: $light;
+  overflow-x: hidden;
+
+  @mixin px {
+    @include media-min(lg-min) {
+      @apply px-24;
+    }
+    @include media-btw(md-min, md-max) {
+      @apply px-14;
+    }
+    @include media-max(sm-max) {
+      @apply px-5;
+    }
+  }
+
+  .section {
+    @include px;
+
+    &__heading {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    &__desc {
+      line-height: 175%;
+    }
+
+    &__title {
+      @include media-min(lg-min) {
+        font-size: 32px;
+      }
+      @include media-btw(md-min, md-max) {
+        font-size: 28px;
+      }
+      @include media-max(sm-max) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .videos {
+    padding: 0;
+
+    .section__heading,
+    .section__videos {
+      @include px;
+    }
+
+    .section__videos {
+      grid-gap: 1em;
+      overflow-x: scroll;
+      @apply mt-7 flex;
+      @include px;
+    }
+  }
+}
+
+// hide all scrollbars
+::-webkit-scrollbar {
+  width: 0;
+}

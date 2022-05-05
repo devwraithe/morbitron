@@ -4,20 +4,16 @@ import "./index.scss";
 const Footer = () => {
   return (
     <>
-      <footer className="footer flex flex-row justify-between px-14">
-        <div className="brand"></div>
-        <div className="footer__links">
+      <footer className="footer flex flex-row justify-center px-14 mt-20">
+        <div className="footer__links text-center" align="center">
           <a href="github" className="footer__anchor">
             github
           </a>
-          <a href="github" className="footer__anchor">
+          <a href="github" className="footer__anchor px-7">
             twitter
           </a>
           <a href="github" className="footer__anchor">
             linkedin
-          </a>
-          <a href="github" className="footer__anchor">
-            instagram
           </a>
         </div>
       </footer>

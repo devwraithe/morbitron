@@ -6,14 +6,13 @@ import "./index.scss";
 // navbar component
 const Navbar = () => {
   return (
-    <nav className="nav fixed w-full flex flex-row justify-between px-20 py-7 z-50">
-      <div className="nav__brand">brand</div>
-      <div className="nav__links">
-        <Link to="/">Movies</Link>
-        <Link to="/series/" className="px-10">
-          TV Series
+    <nav className="nav fixed w-full flex flex-row justify-between">
+      <div className="nav__brand">.moovies</div>
+      <div className="nav__links block text-right">
+        <Link to="/">Home</Link>
+        <Link to="/movies" className="pl-7">
+          All Movies
         </Link>
-        <Link to="/trending">Trending</Link>
       </div>
     </nav>
   );
